@@ -8,6 +8,12 @@ public class Cilindro extends Circulo{
         this.radio = radio;
     }
 
+
+    public Cilindro(Circulo circulo, float altura){
+        this.altura = altura;
+        radio = circulo.getRadio();
+    }
+
     public Cilindro(final Cilindro cilindro){
         this.altura = cilindro.altura;
         this.radio = cilindro.radio;

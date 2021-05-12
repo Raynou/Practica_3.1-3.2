@@ -1,6 +1,15 @@
 public class Circulo {
     protected float radio;
 
+    public Circulo(){return;}
+
+    public Circulo(float radio) {
+        this.radio = radio;
+    }
+
+    public Circulo(final Circulo circulo) {
+        this.radio = circulo.radio; 
+    }
     protected float getRadio() {
         return radio;
     }
