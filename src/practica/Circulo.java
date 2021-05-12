@@ -1,40 +1,21 @@
 public class Circulo {
-    public float radio;
-    public Punto centro;
-    
+    protected float radio;
 
-    public Circulo(Punto centro, float radio) {
-        this.centro = centro;
-        this.radio = radio;
-    }
-
-    public Circulo(final Circulo circulo) {
-        this.radio = circulo.radio; 
-        this.centro = circulo.centro; 
-    }
-
-    public float getRadio() {
+    protected float getRadio() {
         return radio;
     }
 
-    public void setRadio(float radio) {
+    protected void setRadio(float radio) {
         this.radio = radio;
     }
 
-    public Punto getCentro() {
-        return centro;
-    }
-
-    public void setCentro(Punto centro) {
-        this.centro = centro;
-    }
-
-    public double calcularAreaDelCirculo(){
+    protected double calcularAreaDelCirculo(){
         double pi = Math.PI;
         return (Math.pow(radio, 2))*pi;
     }
 
-    public double calcularPerimetroDelCiruclo(){
+    protected double calcularPerimetroDelCiruclo(){
         return (2*Math.PI)*radio;
     }
+
 }
