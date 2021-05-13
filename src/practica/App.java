@@ -15,6 +15,8 @@ public class App {
         DecimalFormat df = new DecimalFormat("#.00");  
         
         /* Se desde la clase Cilindro se llaman a los métodos heredados de la clase Circulo */
+
+        //Primer cilindro
         System.out.println("El área del la base del cilindro es: " +
             df.format(miCilindro.calcularAreaDelCirculo()));
 
@@ -24,6 +26,8 @@ public class App {
         System.out.println("El centro del area de la base es: " +
             miCilindro.getCentro());
 
+
+        //Segundo cilindro
         System.out.println("El área de la base del cilindro es: " +
             df.format(miOtroCilindro.calcularAreaDelCirculo()));
 
