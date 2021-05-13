@@ -1,6 +1,6 @@
 public class Circulo {
     protected float radio;
-
+    protected static final double PI = Math.PI;
     //Constructor por defecto
     public Circulo(){return;}
 
@@ -20,12 +20,11 @@ public class Circulo {
     }
 
     protected double calcularAreaDelCirculo(){
-        double pi = Math.PI;
-        return (Math.pow(radio, 2))*pi;
+        return (Math.pow(radio, 2))*PI;
     }
 
     protected double calcularPerimetroDelCiruclo(){
-        return (2*Math.PI)*radio;
+        return (2*PI)*radio;
     }
 
 }
