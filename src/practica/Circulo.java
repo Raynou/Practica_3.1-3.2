@@ -1,6 +1,5 @@
 public class Circulo {
     protected float radio;
-    //protected Punto centro;
 
     //Constructor por defecto
     public Circulo(){return;}
