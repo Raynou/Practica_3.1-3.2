@@ -3,21 +3,30 @@ import java.text.DecimalFormat;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Cilindro miCilindro = new Cilindro(3.2f, 5.7f); //Primero va el radio del círculo y luego va la altura del cilindro
+        //Al momento de crear el objeto se pasa como parámetro el área de la base y luego la altura del cilindro
+        Cilindro miCilindro = new Cilindro(3.2f, 5.7f); 
 
-        Circulo xd = new Circulo(3.2f);
+        //Se puede crear un objeto de tipo círculo
+        Circulo miCirculo = new Circulo(3.2f);
 
-        Cilindro miOtroCilindro = new Cilindro(xd, 5.7f);
+        //Y pasarlo como parámetro en el contructor del cilindro
+        Cilindro miOtroCilindro = new Cilindro(miCirculo, 5.7f);
         
         DecimalFormat df = new DecimalFormat("#.00");  
         
-        System.out.println(df.format(miCilindro.calcularAreaDelCirculo()));
-        //System.out.println(df.format(miCilindro.calcularPerimetroDelCiruclo()));
-        System.out.println(df.format(miCilindro.calcularVolumenDelCilindro()));
+        /* Se desde la clase Cilindro se llaman a los métodos heredados de la clase Circulo */
+        System.out.println("El área del la base del cilindro es: " +
+            df.format(miCilindro.calcularAreaDelCirculo()));
+
+        System.out.println("El volumen del cilindro es: " +
+            df.format(miCilindro.calcularVolumenDelCilindro()));
 
 
-        System.out.println(df.format(miOtroCilindro.calcularAreaDelCirculo()));
-        //System.out.println(df.format(miCilindro.calcularPerimetroDelCiruclo()));
-        System.out.println(df.format(miOtroCilindro.calcularVolumenDelCilindro()));
+        System.out.println("El área de la base del cilindro es: " +
+            df.format(miOtroCilindro.calcularAreaDelCirculo()));
+
+
+        System.out.println("El volumen del cilindro es: " +
+            df.format(miOtroCilindro.calcularVolumenDelCilindro()));
     }    
 }

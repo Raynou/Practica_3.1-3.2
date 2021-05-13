@@ -1,13 +1,16 @@
 public class Cilindro extends Circulo{
 
-    //public Circulo base;
+    /* Atributos */
     public float altura;
+    
+    /* Constructores */
+    public Cilindro(){return;}
+    
     public Cilindro(float radio, float altura){
 
         this.altura = altura;
         this.radio = radio;
     }
-
 
     public Cilindro(Circulo circulo, float altura){
         this.altura = altura;
@@ -19,6 +22,8 @@ public class Cilindro extends Circulo{
         this.radio = cilindro.radio;
     }
     
+
+    /* Getters & Setters */
     public float getAltura() {
         return altura;
     }
@@ -27,6 +32,7 @@ public class Cilindro extends Circulo{
         this.altura = altura;
     }
 
+    /* Métodos propios de la instancia Cilindro */
     public double calcularVolumenDelCilindro(){
         return calcularAreaDelCirculo()*altura;
     }
