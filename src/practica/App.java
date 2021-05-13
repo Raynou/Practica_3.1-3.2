@@ -27,6 +27,7 @@ public class App {
             miCilindro.getCentro());
 
 
+        System.out.println("===========================================");
         //Segundo cilindro
         System.out.println("El área de la base del cilindro es: " +
             df.format(miOtroCilindro.calcularAreaDelCirculo()));

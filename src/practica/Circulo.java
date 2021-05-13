@@ -23,11 +23,11 @@ public class Circulo {
         this.radio = radio;
     }
 
-    public String getCentro() {
+    protected String getCentro() {
         return "X: " + centro.getX()+", Y: " +  centro.getY();
     }
 
-    public void setCentro(Punto centro) {
+    protected void setCentro(Punto centro) {
         this.centro = centro;
     }
 
