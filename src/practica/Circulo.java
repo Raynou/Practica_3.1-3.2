@@ -1,9 +1,11 @@
 public class Circulo {
     protected float radio;
-    //protected Punto centro;
+    protected Punto centro;
 
     //Constructor por defecto
-    public Circulo(){return;}
+    public Circulo(){
+        this.centro = new Punto();
+    }
 
     public Circulo(float radio) {
         this.radio = radio;
@@ -18,6 +20,14 @@ public class Circulo {
 
     protected void setRadio(float radio) {
         this.radio = radio;
+    }
+
+    public String getCentro() {
+        return "X: " + centro.getX()+", Y: " +  centro.getY();
+    }
+
+    public void setCentro(Punto centro) {
+        this.centro = centro;
     }
 
     protected double calcularAreaDelCirculo(){

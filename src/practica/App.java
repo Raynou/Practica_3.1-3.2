@@ -21,6 +21,8 @@ public class App {
         System.out.println("El volumen del cilindro es: " +
             df.format(miCilindro.calcularVolumenDelCilindro()));
 
+        System.out.println("El centro del area de la base es: " +
+            miCilindro.getCentro());
 
         System.out.println("El área de la base del cilindro es: " +
             df.format(miOtroCilindro.calcularAreaDelCirculo()));
@@ -28,5 +30,8 @@ public class App {
 
         System.out.println("El volumen del cilindro es: " +
             df.format(miOtroCilindro.calcularVolumenDelCilindro()));
+
+        System.out.println("El centro del area de la base es: " +
+            miCilindro.getCentro());
     }    
 }
