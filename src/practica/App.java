@@ -7,7 +7,7 @@ public class App {
         Cilindro miCilindro = new Cilindro(3.2f, 5.7f); 
 
         //Se puede crear un objeto de tipo círculo
-        Circulo miCirculo = new Circulo(3.2f);
+        Circulo miCirculo = new Circulo(6.2f);
 
         //Y pasarlo como parámetro en el contructor del cilindro
         Cilindro miOtroCilindro = new Cilindro(miCirculo, 8.9f);
