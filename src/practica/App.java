@@ -10,7 +10,7 @@ public class App {
         Circulo miCirculo = new Circulo(3.2f);
 
         //Y pasarlo como parámetro en el contructor del cilindro
-        Cilindro miOtroCilindro = new Cilindro(miCirculo, 5.7f);
+        Cilindro miOtroCilindro = new Cilindro(miCirculo, 8.9f);
         
         DecimalFormat df = new DecimalFormat("#.00");  
         
@@ -24,6 +24,7 @@ public class App {
         System.out.println("El volumen del cilindro es: " +
             df.format(miCilindro.calcularVolumenDelCilindro()));
 
+        System.out.println("=========================================");
 
         /* Segundo cilindro */
 
