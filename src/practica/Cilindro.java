@@ -33,7 +33,7 @@ public class Cilindro{
 
     //Métodos para calcular el área de la base y el volumen del cilindro.
     public double calcularAreaDeLaBase(){
-        return Math.PI*(Math.pow(base.getRadio(), 2));
+        return Circulo.PI*(Math.pow(base.getRadio(), 2));
     }    
     
     public double calcularVolumenDelCilindro(){
