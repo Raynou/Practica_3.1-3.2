@@ -3,7 +3,6 @@ public class Cilindro{
     public Circulo base;
     public float altura;
 
-
     public Cilindro(Circulo base, float altura){
 
         this.base = base;
@@ -16,7 +15,6 @@ public class Cilindro{
     }
 
     public Circulo getBase(){
-
         return base;
     }
 
@@ -35,21 +33,13 @@ public class Cilindro{
 
     //Métodos para calcular el área de la base y el volumen del cilindro.
     public double calcularAreaDeLaBase(){
-        double radio = base.getRadio();
-        return Math.PI*(Math.pow(radio, 2));
-    }
-
-    public double calcularAreaDeLaBase(float radio){
-        return Math.PI*(Math.pow(radio, 2));
-    }
-
+        return Math.PI*(Math.pow(base.getRadio(), 2));
+    }    
+    
     public double calcularVolumenDelCilindro(){
         return calcularAreaDeLaBase()*altura;
     }
 
-    public double calcularVolumenDelCilindro(float areaDeLaBase,double altura){
-        return areaDeLaBase*altura;
-    }
 }
 
 
