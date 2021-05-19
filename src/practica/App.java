@@ -20,7 +20,7 @@ public class App {
         /* Primer cilindro */
         
         System.out.println("El área del la base del cilindro es: " +
-            df.format(miCilindro.calcularAreaDelCirculo()));
+            df.format(miCilindro.calcularAreaDeLaBase()));
 
         System.out.println("El volumen del cilindro es: " +
             df.format(miCilindro.calcularVolumenDelCilindro()));
@@ -30,7 +30,7 @@ public class App {
         /* Segundo cilindro */
 
         System.out.println("El área de la base del cilindro es: " +
-            df.format(miOtroCilindro.calcularAreaDelCirculo()));
+            df.format(miOtroCilindro.calcularAreaDeLaBase()));
 
 
         System.out.println("El volumen del cilindro es: " +

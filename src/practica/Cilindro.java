@@ -1,25 +1,29 @@
-public class Cilindro extends Circulo{
+public class Cilindro{
 
-    /* Atributos */
-    public float altura;
     public Circulo base;
+    public float altura;
 
-    /* Constructores */
-    public Cilindro(){return;}
-    
+
     public Cilindro(Circulo base, float altura){
 
-        this.altura = altura;
         this.base = base;
+        this.altura = altura;
     }
 
     public Cilindro(final Cilindro cilindro){
+        this.base = cilindro.base;  
         this.altura = cilindro.altura;
-        this.base = cilindro.base;
+    }
+
+    public Circulo getBase(){
+
+        return base;
+    }
+
+    public void setBase(Circulo base){
+        this.base =  base;
     }
     
-
-    /* Getters & Setters */
     public float getAltura() {
         return altura;
     }
@@ -28,10 +32,25 @@ public class Cilindro extends Circulo{
         this.altura = altura;
     }
 
-    /* Métodos propios de la instancia Cilindro */
-    public double calcularVolumenDelCilindro(){
-        return calcularAreaDelCirculo()*altura;
+
+    //Métodos para calcular el área de la base y el volumen del cilindro.
+    public double calcularAreaDeLaBase(){
+        double radio = base.getRadio();
+        return Math.PI*(Math.pow(radio, 2));
     }
 
-    
+    public double calcularAreaDeLaBase(float radio){
+        return Math.PI*(Math.pow(radio, 2));
+    }
+
+    public double calcularVolumenDelCilindro(){
+        return calcularAreaDeLaBase()*altura;
+    }
+
+    public double calcularVolumenDelCilindro(float areaDeLaBase,double altura){
+        return areaDeLaBase*altura;
+    }
 }
+
+
+    
