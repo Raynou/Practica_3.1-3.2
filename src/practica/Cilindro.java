@@ -2,24 +2,20 @@ public class Cilindro extends Circulo{
 
     /* Atributos */
     public float altura;
-    
+    public Circulo base;
+
     /* Constructores */
     public Cilindro(){return;}
     
-    public Cilindro(float radio, float altura){
+    public Cilindro(Circulo base, float altura){
 
         this.altura = altura;
-        this.radio = radio;
-    }
-
-    public Cilindro(Circulo circulo, float altura){
-        this.altura = altura;
-        radio = circulo.getRadio();
+        this.base = base;
     }
 
     public Cilindro(final Cilindro cilindro){
         this.altura = cilindro.altura;
-        this.radio = cilindro.radio;
+        this.base = cilindro.base;
     }
     
 
